@@ -17,66 +17,40 @@
 <script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
 </head>
 <body>
-<div id="container"> 
+<div id="container">
   <!-- Begin Header Wrapper -->
   <div id="page-top">
-    <div id="header-wrapper"> 
+    <div id="header-wrapper">
       <!-- Begin Header -->
       <div id="header">
-        <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="Delphic" /></a></div>
-        <!-- Logo --> 
+        <div id="logo"><a href="index.html"><img src="images/logo_white.png" id="logoPic" /></a></div>
+        <!-- Logo -->
         <!-- Begin Menu -->
         <div id="menu-wrapper">
           <div id="smoothmenu1" class="ddsmoothmenu">
-            <ul>
-              <li><a href="index.html">Home</a>
+           <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html" class="selected">Gallery</a>
                 <ul>
-                  <li><a href="index.html">Home with Cycle</a></li>
-                  <li><a href="index-2.html">Home with Columns</a></li>
-                  <li><a href="index-3.html">Home with Services</a></li>
-                  <li><a href="index-4.html">Home with Piecemaker</a></li>
+                  <li><a href="gallery-ballet.html">Ballet</a></li>
+                  <li><a href="gallery-horses.html">Horses</a></li>
                 </ul>
               </li>
-              <li><a href="blog-1.html">Blog</a>
-                <ul>
-                  <li><a href="blog-1.html">Blog</a></li>
-                  <li><a href="blog-2.html">News</a></li>
-                  <li><a href="blog-single.html">Single Blog Post</a></li>
-                </ul>
-              </li>
-              <li><a href="portfolio-1.html" class="selected">Portfolio</a>
-                <ul>
-                  <li><a href="portfolio-1.html">Portfolio with Lightbox</a></li>
-                  <li><a href="portfolio-2.html">Portfolio with Details</a></li>
-                  <li><a href="portfolio-single.html">Single Portfolio Post</a></li>
-                </ul>
-              </li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="page-tabs-toggle.html">Features</a>
-                <ul>
-                  <li><a href="page-tabs-toggle.html">Tabs &amp; Toggle</a></li>
-                  <li><a href="page-carousel.html">Carousel</a></li>
-                  <li><a href="blog-2.html">News</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="page-custom.html">Custom Page</a></li>
-                  <li><a href="page-buttons.html">Buttons</a></li>
-                  <li><a href="styles.html">Columns &amp; Tables</a></li>
-                </ul>
-              </li>
+              <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
-            </ul>
+           </ul>
           </div>
         </div>
         <!-- End Menu -->
       </div>
-      <!-- End Header --> 
+      <!-- End Header -->
     </div>
   </div>
-  <!-- End Header Wrapper --> 
-  
+  <!-- End Header Wrapper -->
+
   <!-- Begin Wrapper -->
   <div id="wrapper">
-    <div id="portfolio"> 
+    <div id="portfolio">
       <!-- Begin Portfolio Navigation -->
       <ul class="gallerynav">
         <li class="selected-1"><a href="#" data-value="all">All<span></span></a></li>
@@ -85,15 +59,15 @@
         <li><a href="#" data-value="video">Video<span></span></a></li>
         <li><a href="#" data-value="web">Web Design<span></span></a></li>
       </ul>
-      <!-- End Portfolio Navigation --> 
-      
+      <!-- End Portfolio Navigation -->
+
       <!-- Begin Portfolio Elements -->
       <ul id="gallery" class="grid">
-        
+
         <!-- Begin Image 1 -->
         <li data-id="id-1" class="photography"> <a href="style/images/art/portfolio1.jpg" rel="prettyPhoto[gallery]"> <img src="style/images/art/portfolio1-th.jpg" alt="" /></a> </li>
         <!-- End Image 1 -->
-        
+
         <li data-id="id-2" class="illustration"> <a href="style/images/art/portfolio2.jpg" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio2-th.jpg" alt="" /></a> </li>
         <li data-id="id-3" class="video"> <a href="http://vimeo.com/4887811" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio3-th.jpg" alt="" /></a> </li>
         <li data-id="id-4" class="web"> <a href="style/images/art/portfolio4.jpg" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio4-th.jpg" alt="" /></a> </li>
@@ -110,11 +84,11 @@
         <li data-id="id-15" class="photography"> <a href="style/images/art/portfolio15.jpg" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio15-th.jpg" alt="" /></a> </li>
         <li data-id="id-16" class="illustration"> <a href="style/images/art/portfolio16.jpg" rel="prettyPhoto[gallery]" title=""> <img src="style/images/art/portfolio16-th.jpg" alt="" /></a> </li>
       </ul>
-      <!-- End Portfolio Elements --> 
-      
+      <!-- End Portfolio Elements -->
+
     </div>
   </div>
-  
+
   <!-- End Wrapper -->
   <div class="clearfix"></div>
   <div class="push"></div>
@@ -123,14 +97,14 @@
 <!-- Begin Footer -->
 <div id="footer-wrapper">
   <div id="footer">
-    <div id="footer-content"> 
-      
+    <div id="footer-content">
+
       <!-- Begin Copyright -->
       <div id="copyright">
         <p>© Copyright 2011 Delphic | Creative Portfolio Template</p>
       </div>
-      <!-- End Copyright --> 
-      
+      <!-- End Copyright -->
+
       <!-- Begin Social Icons -->
       <div id="socials">
         <ul>
@@ -142,22 +116,22 @@
           <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
         </ul>
       </div>
-      <!-- End Social Icons --> 
-      
+      <!-- End Social Icons -->
+
     </div>
   </div>
 </div>
 
-<!-- End Footer --> 
+<!-- End Footer -->
 <script type="text/javascript">
 $(document).ready(function(){
 			$("#gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'light_square',autoplay_slideshow: false});
-			
+
 			$("ul.grid img").hide()
 			$("ul.grid img").each(function(i) {
 			  $(this).delay(i * 200).fadeIn();
 			});
-			
+
 });
 </script>
 </body>

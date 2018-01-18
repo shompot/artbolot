@@ -38,15 +38,15 @@ $(function() {
 			}
 });
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
     var fileNames = new Array();
     $.ajax({
-      url: "images/slideshow",
+      url: "/images/slideshow",
       success: function(data){
          $(data).find("td > a").each(function(){
             if(openFile($(this).attr("href"))){
                 fileNames.push($(this).attr("href"));
+					 console.log($(this).text());
             }
          });
       }
@@ -54,6 +54,7 @@ $(function() {
     console.log(fileNames);
     function openFile(file) {
         var extension = file.substr( (file.lastIndexOf('.') +1) );
+		  conole.log(extension);
         switch(extension) {
             case 'jpg':
             case 'png':
@@ -79,13 +80,13 @@ $(function() {
           <div id="smoothmenu1" class="ddsmoothmenu">
             <ul>
               <li><a href="index.html" class="selected">Home</a></li>
-              <li><a href="portfolio-1.html">Gallery</a>
+              <li><a href="gallery.html">Gallery</a>
                 <ul>
-                  <li><a href="portfolio-1.html">Ballet</a></li>
-                  <li><a href="portfolio-2.html">Hourses</a></li>
+                  <li><a href="gallery-ballet.html">Ballet</a></li>
+                  <li><a href="gallery-horses.html">Horses</a></li>
                 </ul>
               </li>
-              <li><a href="services.html">About</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -126,8 +127,9 @@ $(function() {
       <!-- Begin Social Icons -->
       <div id="socials">
         <ul>
-          <li><a href="#"><img src="style/images/icon-twitter.png" alt="" /></a></li>
-          <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
+          <li><a href="#"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
+          <li><a href="#"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
+			 <li><a href="#"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
         </ul>
       </div>
       <!-- End Social Icons -->

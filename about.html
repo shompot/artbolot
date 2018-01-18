@@ -13,63 +13,37 @@
 <script type="text/javascript" src="style/js/scripts.js"></script>
 </head>
 <body>
-<div id="container"> 
+<div id="container">
   <!-- Begin Header Wrapper -->
   <div id="page-top">
-    <div id="header-wrapper"> 
+    <div id="header-wrapper">
       <!-- Begin Header -->
       <div id="header">
-        <div id="logo"><a href="index.html"><img src="style/images/logo.png" alt="Delphic" /></a></div>
-        <!-- Logo --> 
+        <div id="logo"><a href="index.html"><img src="images/logo_white.png" id="logoPic" /></a></div>
+        <!-- Logo -->
         <!-- Begin Menu -->
         <div id="menu-wrapper">
           <div id="smoothmenu1" class="ddsmoothmenu">
-            <ul>
-              <li><a href="index.html">Home</a>
+           <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a>
                 <ul>
-                  <li><a href="index.html">Home with Cycle</a></li>
-                  <li><a href="index-2.html">Home with Columns</a></li>
-                  <li><a href="index-3.html">Home with Services</a></li>
-                  <li><a href="index-4.html">Home with Piecemaker</a></li>
+                  <li><a href="gallery-ballet.html">Ballet</a></li>
+                  <li><a href="gallery-horses.html">Horses</a></li>
                 </ul>
               </li>
-              <li><a href="blog-1.html">Blog</a>
-                <ul>
-                  <li><a href="blog-1.html">Blog</a></li>
-                  <li><a href="blog-2.html">News</a></li>
-                  <li><a href="blog-single.html">Single Blog Post</a></li>
-                </ul>
-              </li>
-              <li><a href="portfolio-1.html">Portfolio</a>
-                <ul>
-                  <li><a href="portfolio-1.html">Portfolio with Lightbox</a></li>
-                  <li><a href="portfolio-2.html">Portfolio with Details</a></li>
-                  <li><a href="portfolio-single.html">Single Portfolio Post</a></li>
-                </ul>
-              </li>
-              <li><a href="services.html" class="selected">Services</a></li>
-              <li><a href="page-tabs-toggle.html">Features</a>
-                <ul>
-                  <li><a href="page-tabs-toggle.html">Tabs &amp; Toggle</a></li>
-                  <li><a href="page-carousel.html">Carousel</a></li>
-                  <li><a href="blog-2.html">News</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="page-custom.html">Custom Page</a></li>
-                  <li><a href="page-buttons.html">Buttons</a></li>
-                  <li><a href="styles.html">Columns &amp; Tables</a></li>
-                </ul>
-              </li>
+              <li><a href="about.html" class="selected">About</a></li>
               <li><a href="contact.html">Contact</a></li>
-            </ul>
+           </ul>
           </div>
         </div>
         <!-- End Menu -->
       </div>
-      <!-- End Header --> 
+      <!-- End Header -->
     </div>
   </div>
-  <!-- End Header Wrapper --> 
-  
+  <!-- End Header Wrapper -->
+
   <!-- Begin Wrapper -->
   <div id="wrapper">
     <div class="tab-wrapper">
@@ -137,7 +111,7 @@
     <div class="clear"></div>
   </div>
   <!-- End Wrapper -->
-  
+
   <div class="clearfix"></div>
   <div class="push"></div>
 </div>
@@ -145,14 +119,14 @@
 <!-- Begin Footer -->
 <div id="footer-wrapper">
   <div id="footer">
-    <div id="footer-content"> 
-      
+    <div id="footer-content">
+
       <!-- Begin Copyright -->
       <div id="copyright">
         <p>© Copyright 2011 Delphic | Creative Portfolio Template</p>
       </div>
-      <!-- End Copyright --> 
-      
+      <!-- End Copyright -->
+
       <!-- Begin Social Icons -->
       <div id="socials">
         <ul>
@@ -164,19 +138,19 @@
           <li><a href="#"><img src="style/images/icon-facebook.png" alt="" /></a></li>
         </ul>
       </div>
-      <!-- End Social Icons --> 
-      
+      <!-- End Social Icons -->
+
     </div>
   </div>
 </div>
-<!-- End Footer --> 
+<!-- End Footer -->
 
 <script type="text/javascript">
 
-$(document).ready(function() {	
+$(document).ready(function() {
   //Get all the LI from the #tabMenu UL
   $('#tab-menu > li').click(function(){
-    //remove the selected class from all LI    
+    //remove the selected class from all LI
     $('#tab-menu > li').removeClass('selected');
     //Reassign the LI
     $(this).addClass('selected');
@@ -185,13 +159,13 @@ $(document).ready(function() {
     //Look for the right DIV in boxBody according to the Navigation UL index, therefore, the arrangement is very important.
     $('.tab-content div.tab:eq(' + $('#tab-menu > li').index(this) + ')').slideDown('slow');
   }).mouseover(function() {
-    //Add and remove class, Personally I dont think this is the right way to do it, anyone please suggest    
+    //Add and remove class, Personally I dont think this is the right way to do it, anyone please suggest
     $(this).addClass('mouseover');
-    $(this).removeClass('mouseout');   
+    $(this).removeClass('mouseout');
   }).mouseout(function() {
     //Add and remove class
     $(this).addClass('mouseout');
-    $(this).removeClass('mouseover');    
+    $(this).removeClass('mouseover');
   });
 });
 
