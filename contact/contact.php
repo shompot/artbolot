@@ -4,8 +4,8 @@
 error_reporting (E_ALL ^ E_NOTICE);
 $post = (!empty($_POST)) ? true : false;
 
-$replyto='yourname@yourdomain.com';
-$subject = 'Contact Form Results';
+$replyto='cholpon94@gmail.com.com';
+$subject = 'ArtBolot.com Contact Form';
 
 if($post)
 	{
@@ -20,7 +20,7 @@ $regex = "/([a-z0-9_\.\-]+)". # name
 
 "\.". # period
 
-"([a-z]+){2,10}/i"; # domain extension 
+"([a-z]+){2,10}/i"; # domain extension
 
 $eregi = preg_replace($regex, '', $email);
 
@@ -55,7 +55,7 @@ $messages.="Name: $name <br>";
 $messages.="Email: $email <br>";
 $messages.="Message: $message <br>";
 
-	$mail = mail($to,$subject,$messages,$headers);	
+	$mail = mail($to,$subject,$messages,$headers);
 
 if($mail)
 	{

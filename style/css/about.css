@@ -1,68 +1,30 @@
 /*-----------------------------------------------------------------------------------*/
 /*	8.	HOME ABOUT
 /*-----------------------------------------------------------------------------------*/
-
-#about .one-fourth img {
-	-moz-box-shadow: 0px 1px 2px #656565;
-	-webkit-box-shadow: 0px 1px 2px #656565;
-	box-shadow: 0px 1px 2px #656565;
-	display: block;
-	margin-bottom: 20px;
+h1,h2{
+	color: #5d8ba6;
+	text-align: center;
 }
 
-#about .one-fourth p {
-	margin-bottom: 15px;
+h4 {
+	color: rgb(93,139,166);
+	font-family: 'Puritan20Normal';
 }
 
 /*-----------------------------------------------------------------------------------*/
 /*	12.	VERTICAL TAB
 /*-----------------------------------------------------------------------------------*/
 
-ul#tab-menu {
-	float:left;
-	width: 230px;
-	background-color: #FFF;
-	-moz-box-shadow: 0px 1px 2px #9f9f9f;
-	-webkit-box-shadow: 0px 1px 2px #9f9f9f;
-	box-shadow: 0px 1px 2px #9f9f9f;
-	margin:0 20px 0 0;
-	padding: 0 10px;
-	list-style:none;
-	font-family: 'Puritan20Normal';
-	font-size: 17px;
-}
-
-ul#tab-menu li {
-	background: transparent url(style/images/line.png) bottom repeat-x;
-	cursor: pointer;
-	padding: 20px 10px;
-	margin: 0;
-	color: #565656;
-}
-
-ul#tab-menu li:hover, ul#tab-menu li.selected {
-	color: #5d8ba6;
-}
-
-ul#tab-menu li img {
-	vertical-align: middle;
-	padding-right: 10px;
-}
-
-ul#tab-menu li:last-child {
-	background: none;
-}
-
 .tab-wrapper {
 	width:960px;
 }
 
 .tab-content {
-	background-color: #FFF;
-	-moz-box-shadow: 0px 1px 2px #9f9f9f;
-	-webkit-box-shadow: 0px 1px 2px #9f9f9f;
-	box-shadow: 0px 1px 2px #9f9f9f;
-	width: 650px;
+	background-color: black;
+	//-moz-box-shadow: 0px 1px 2px #9f9f9f;
+	//-webkit-box-shadow: 0px 1px 2px #9f9f9f;
+	//box-shadow: 0px 1px 2px #9f9f9f;
+	width: 930px;
 	float:left;
 	padding: 20px 20px 0 20px;
 }
@@ -77,7 +39,7 @@ ul#tab-menu li:last-child {
 }
 
 .tab-content div.tab p {
-	width:650px;
+	width:930px;
 	overflow: hidden;
 	padding: 0;
 	margin: 0 0 20px 0;

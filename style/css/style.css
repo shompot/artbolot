@@ -711,66 +711,6 @@ table.price td h2 sup {
 	height: 1%;
 } /*Holly Hack for IE7 and below*/
 
-
-/*-----------------------------------------------------------------------------------*/
-/*	6.	COLUMNS
-/*-----------------------------------------------------------------------------------*/
-
-.one-half {
-	width:48%;
-}
-
-.one-third {
-	width:30.66%;
-}
-
-.two-third {
-	width:65.33%;
-}
-
-.one-fourth {
-	width:22%;
-}
-
-.three-fourth {
-	width:74%;
-}
-
-.one-fifth {
-	width:16.8%;
-}
-
-.two-fifth {
-	width:37.6%;
-}
-
-.three-fifth {
-	width:58.4%;
-}
-
-.four-fifth {
-	width:67.2%;
-}
-
-.one-sixth {
-	width:13.33%;
-}
-
-.five-sixth {
-	width:82.67%;
-}
-
-.one-half, .one-third, .two-third, .three-fourth, .one-fourth, .one-fifth, .two-fifth, .three-fifth, .four-fifth, .one-sixth, .five-sixth {
-	position:relative;
-	margin-right:4%;
-	float:left;
-}
-
-.last {
-	margin-right:0 !important;
-	clear:right;
-}
-
 /*-----------------------------------------------------------------------------------*/
 /*	7.	HOME INTRO
 /*-----------------------------------------------------------------------------------*/
@@ -787,31 +727,4 @@ table.price td h2 sup {
 .intro {
 	margin-top: -10px;
 	margin-bottom:60px;
-}
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	9.	PAGE
-/*-----------------------------------------------------------------------------------*/
-
-.content {
-	background-color: #FFF;
-	-moz-box-shadow: 0px 1px 2px #9f9f9f;
-	-webkit-box-shadow: 0px 1px 2px #9f9f9f;
-	box-shadow: 0px 1px 2px #9f9f9f;
-	padding: 20px 20px 0 20px;
-	display: block;
-	overflow: hidden;
-	margin-bottom: 20px;
-}
-
-#wrapper ul.social {
-	margin-top: 10px;
-}
-
-#wrapper ul.social li {
-	float: left;
-	background: none;
-	margin-right: 10px;
-	padding: 0;
 }
