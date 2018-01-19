@@ -1,0 +1,132 @@
+/*-----------------------------------------------------------------------------------*/
+/*	9.	PAGE
+/*-----------------------------------------------------------------------------------*/
+h1,h2, h3, h4 {
+	color: #5d8ba6;
+	//text-align: center;
+}
+
+#ajax-contact-form {
+	color: rgba(50,50,50,1);
+}
+
+.content {
+	background-color: black;
+	//-moz-box-shadow: 0px 1px 2px #9f9f9f;
+	//-webkit-box-shadow: 0px 1px 2px #9f9f9f;
+	//box-shadow: 0px 1px 2px #9f9f9f;
+	padding: 20px 20px 0 20px;
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#wrapper ul.social {
+	margin-top: 10px;
+}
+
+#wrapper ul.social li {
+	float: left;
+	background: none;
+	margin-right: 10px;
+	padding: 0;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	16.	CONTACT
+/*-----------------------------------------------------------------------------------*/
+
+
+#wrapper ul.info li {
+	background: none;
+	padding: 0 0 0 35px;
+	margin-bottom: 15px;
+}
+
+#wrapper ul.info li img {
+	vertical-align: top;
+}
+
+#wrapper ul.info li.home {
+	background: transparent url(style/images/icon-home.png) no-repeat 0 2px;
+}
+
+#wrapper ul.info li.phone {
+	background: transparent url(style/images/icon-phone.png) no-repeat 0 2px;
+}
+
+#wrapper ul.info li.email {
+	background: transparent url(style/images/icon-email.png) no-repeat 0 4px;
+}
+
+#twitter-wrapper {
+	float: none;
+	clear: both;
+	margin: 0 0 60px 0;
+	position: relative;
+}
+
+#twitter {
+	font-style: italic;
+	font-size:12px;
+	padding: 10px 0;
+	background: #e8e8e8 url(style/images/twitter.png) no-repeat 20px center;
+	min-height: 28px;
+}
+
+#twitter ul {
+	padding: 0;
+	margin: 0;
+}
+
+#twitter ul li {
+	background: none;
+	padding: 5px 10px 5px 80px;
+	line-height: 16px;
+}
+
+#twitter ul li a {
+	color: #5d8ba6;
+	text-decoration: none;
+}
+
+#twitter ul li a:hover {
+	text-decoration: underline;
+}
+
+.username {
+	background: transparent url(style/images/twitter-arrow.png) no-repeat center top;
+	position: absolute;
+	padding: 15px 0 0 0;
+	right: 0;
+	bottom:-35px;
+	font-size: 12px;
+}
+
+.username a {
+	color: #5d8ba6;
+}
+
+
+
+#wrapper .contact-social ul {
+	margin: 20px 0 0 0;
+}
+
+#wrapper .contact-social ul li {
+	background: none;
+	float: left;
+	padding: 0;
+	margin: 0 10px 0 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	6.	COLUMNS
+/*-----------------------------------------------------------------------------------*/
+
+.one-half {
+	width:100%;
+	margin: 0 auto;
+	//position: relative;
+}

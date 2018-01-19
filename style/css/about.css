@@ -1,0 +1,50 @@
+/*-----------------------------------------------------------------------------------*/
+/*	8.	HOME ABOUT
+/*-----------------------------------------------------------------------------------*/
+h1,h2{
+	color: #5d8ba6;
+	text-align: center;
+}
+
+h4 {
+	color: rgb(93,139,166);
+	font-family: 'Puritan20Normal';
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	12.	VERTICAL TAB
+/*-----------------------------------------------------------------------------------*/
+
+.tab-wrapper {
+	width:960px;
+}
+
+.tab-content {
+	background-color: black;
+	//-moz-box-shadow: 0px 1px 2px #9f9f9f;
+	//-webkit-box-shadow: 0px 1px 2px #9f9f9f;
+	//box-shadow: 0px 1px 2px #9f9f9f;
+	width: 930px;
+	float:left;
+	padding: 20px 20px 0 20px;
+}
+
+.tab-content div.tab {
+	display:none;
+	padding: 0;
+}
+
+.tab-content div.tab.show {
+	display:block;
+}
+
+.tab-content div.tab p {
+	width:930px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+.tab-content div.tab div p {
+	width:100%;
+}

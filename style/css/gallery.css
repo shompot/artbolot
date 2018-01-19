@@ -1,0 +1,275 @@
+/*-----------------------------------------------------------------------------------*/
+/*	10.	PORTFOLIO
+/*-----------------------------------------------------------------------------------*/
+
+#portfolio ul li {
+	background: none;
+	padding: 0;
+}
+
+#wrapper ul.grid {
+	width: 985px;
+	overflow: hidden;
+	margin:0 auto;
+	margin-left:-20px;
+	padding: 0;
+}
+
+ul.grid:after {
+	content: "";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+ul.grid li {
+	width: 225px;
+	margin: 0;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	float: left;
+	overflow: hidden;
+	background: none;
+	-moz-box-shadow: 0px 1px 2px #8e8e8e;
+	-webkit-box-shadow: 0px 1px 2px #8e8e8e;
+	box-shadow: 0px 1px 2px #8e8e8e;
+}
+
+ul.grid li a {
+	outline:0;
+}
+
+ul.grid li img {
+	display: block;
+	width:225px;
+	height:150px;
+}
+
+ul.gallerynav {
+	width:960px;
+	margin:0 auto 22px;
+	height: 14px;
+	background-color: #FFF;
+	-moz-box-shadow: 0px 1px 2px #9f9f9f;
+	-webkit-box-shadow: 0px 1px 2px #9f9f9f;
+	box-shadow: 0px 1px 2px #9f9f9f;
+}
+
+ul.gallerynav li {
+	float:left;
+}
+
+ul.gallerynav li a {
+	float:left;
+	font-family: 'Puritan20Normal';
+	color: #565656;
+	margin: 0 15px;
+	font-size: 15px;
+	line-height: 18px;
+	padding: 8px 0;
+}
+
+ul.gallerynav li a:hover {
+	text-decoration: none;
+	color: #5d8ba6;
+}
+
+ul.gallerynav li.selected-1 a {
+	color: #5d8ba6;
+}
+
+.hidden {
+	display: none;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	11.	SINGLE PORTFOLIO
+/*-----------------------------------------------------------------------------------*/
+
+#portfolio-single .image {
+	width: 660px;
+	float: left;
+	margin-right: 20px;
+	overflow: hidden;
+	padding: 3px 5px 0 0;
+}
+
+#portfolio-single .image img {
+	margin-bottom: 15px;
+	-moz-box-shadow: 0px 1px 3px #8e8e8e;
+	-webkit-box-shadow: 0px 1px 3px #8e8e8e;
+	box-shadow: 0px 1px 3px #8e8e8e;
+}
+
+#portfolio-single .text {
+	width: 235px;
+	padding: 20px;
+	margin: 2px 0 0 0;
+	float: right;
+	background-color: #FFF;
+	-moz-box-shadow: 0px 1px 2px #9f9f9f;
+	-webkit-box-shadow: 0px 1px 2px #9f9f9f;
+	box-shadow: 0px 1px 2px #9f9f9f;
+	overflow: hidden;
+}
+
+#portfolio-single a:hover {
+	text-decoration: underline;
+}
+
+a.p-project, a.n-project {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 12px;
+	color: #565656;
+	line-height: 1;
+	float: left;
+}
+
+a.n-project {
+	float: right;
+}
+
+#portfolio-single a.p-project:hover, #portfolio-single a.n-project:hover {
+	text-decoration: none;
+	color: #5d8ba6;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	18.	CAROUSEL
+/*-----------------------------------------------------------------------------------*/
+
+#wrapper .d-carousel ul li {
+	background: none;
+	background-color: #FFF;
+	-moz-box-shadow: 0px 1px 2px #9f9f9f;
+	-webkit-box-shadow: 0px 1px 2px #9f9f9f;
+	box-shadow: 0px 1px 2px #9f9f9f;
+	padding: 15px;
+	width: 175px;
+}
+
+.jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.d-carousel h4 {
+	margin: 5px 0 5px 0;
+}
+
+.d-carousel .jcarousel-container {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.d-carousel .jcarousel-item {
+	width: 190px;
+	height: 290px;
+}
+
+.d-carousel .jcarousel-container-horizontal {
+	width: 870px;
+	height: 325px;
+	padding: 0 45px;
+}
+
+.d-carousel.sgrid .jcarousel-container {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 20px;
+	height: 156px;
+}
+
+.d-carousel.sgrid .jcarousel-clip-horizontal {
+	width:  870px;
+	height: 156px;
+}
+
+.d-carousel.sgrid .jcarousel-item {
+	width: 190px;
+	height: 120px;
+}
+
+.d-carousel .jcarousel-item-horizontal {
+	margin-left: 3px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-right: 11px;
+}
+
+.d-carousel .jcarousel-next-horizontal {
+	position: absolute;
+	top: 149px;
+	right: 0;
+	margin-right: 3px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: transparent url(style/images/blog-arrows.jpg) no-repeat top right;
+	-moz-box-shadow: 0px 1px 2px #888;
+	-webkit-box-shadow: 0px 1px 2px #888;
+	box-shadow: 0px 1px 2px #888;
+}
+
+.d-carousel.sgrid .jcarousel-next-horizontal {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	margin-right: 3px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: transparent url(style/images/blog-arrows.jpg) no-repeat top right;
+	-moz-box-shadow: 0px 1px 2px #888;
+	-webkit-box-shadow: 0px 1px 2px #888;
+	box-shadow: 0px 1px 2px #888;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left: 5px;
+	right: auto;
+	background-image: url(style/images/blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-next-horizontal:hover {
+	background-position: bottom right;
+}
+
+.d-carousel .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 149px;
+	left: 0;
+	margin-left: 3px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: transparent url(style/images/blog-arrows.jpg) no-repeat top left;
+	-moz-box-shadow: 0px 1px 2px #888;
+	-webkit-box-shadow: 0px 1px 2px #888;
+	box-shadow: 0px 1px 2px #888;
+}
+
+.d-carousel.sgrid .jcarousel-prev-horizontal {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	margin-left: 3px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: gray url(style/images/blog-arrows.jpg) no-repeat top left;
+	-moz-box-shadow: 0px 1px 2px #888;
+	-webkit-box-shadow: 0px 1px 2px #888;
+	box-shadow: 0px 1px 2px #888;
+}
+
+.d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left: auto;
+	right: 5px;
+	background-image: url(style/images/blog-arrows.jpg);
+}
+
+.d-carousel .jcarousel-prev-horizontal:hover {
+	background-position: bottom left;
+}
