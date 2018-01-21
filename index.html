@@ -82,10 +82,6 @@ $(function() {
             <ul>
               <li><a href="index.html" class="selected">Home</a></li>
               <li><a href="gallery.html">Gallery</a>
-                <ul>
-                  <li><a href="gallery-ballet.html">Ballet</a></li>
-                  <li><a href="gallery-horses.html">Horses</a></li>
-                </ul>
               </li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -109,6 +105,7 @@ $(function() {
     </ul>
     <div class="sliderdir"> <a href="#"><span class="sliderprev">Prev</span></a> <a href="#"><span class="slidernext">Next</span></a> </div>
   </div>
+
   <!-- End Slider -->
 
 </div>
@@ -138,5 +135,17 @@ $(function() {
   </div>
 </div>
 <!-- End Footer -->
+<script type="text/javascript">
+$(document).ready(function(){
+         $('.slide-box img').css ('width', '100%');
+         $w = $('.slide-box img').css ('width');
+         $h = $('.slide-box img').css ('height');
+         if ($w < $h){
+            $('.slide-box img').css ('height', '100%');
+            $('.slide-box img').css ('width', 'auto');
+         }
+
+});
+</script>
 </body>
 </html>

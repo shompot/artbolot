@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Gallery | ArtBolot</title>
+<link rel="stylesheet" type="text/css" href="style/css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="style/css/gallery3.css" media="all" />
+<link rel="stylesheet" media="all" href="style/css/prettyPhoto.css" />
+<link rel="stylesheet" media="all" href="style/type/folks.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/quicksand.js"></script>
+<script type="text/javascript" src="style/js/portfolio.js"></script>
+<script type="text/javascript" src="style/js/scripts.js"></script>
+<script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
+</head>
+<body>
+<div id="container">
+  <!-- Begin Header Wrapper -->
+  <div id="page-top">
+    <div id="header-wrapper">
+      <!-- Begin Header -->
+      <div id="header">
+        <div id="logo"><a href="index.html"><img src="images/logo_white.png" id="logoPic" /></a></div>
+        <!-- Logo -->
+        <!-- Begin Menu -->
+        <div id="menu-wrapper">
+          <div id="smoothmenu1" class="ddsmoothmenu">
+           <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html" class="selected">Gallery</a>
+                <ul>
+                  <li><a href="gallery-ballet.html">Ballet</a></li>
+                  <li><a href="gallery-horses.html">Horses</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+           </ul>
+          </div>
+        </div>
+        <!-- End Menu -->
+      </div>
+      <!-- End Header -->
+    </div>
+  </div>
+  <!-- End Header Wrapper -->
+
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+     <div id="gallery">
+      <p><img id="placeholder" class="mainImage" src="images/ballet/40x42.jpg" alt="" /></p>
+      <ul class="thumbs">
+        <li><a href="images/ballet/50x50.jpg"><img src="images/ballet/50x50.jpg" alt="" /></a></li>
+        <li><a href="images/ballet/50x50.jpg"><img src="images/ballet/50x50.jpg" alt="" /></a></li>
+        <li><a href="images/ballet/50x50.jpg"><img src="images/ballet/50x50.jpg" alt="" /></a></li>
+        <li><a href="images/ballet/50x50.jpg"><img src="images/ballet/50x50.jpg" alt="" /></a></li>
+        <li class='last'><a href="images/ballet/50x50.jpg"><img src="images/ballet/50x50.jpg" alt="" /></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End Wrapper -->
+  <div class="clearfix"></div>
+  <div class="push"></div>
+</div>
+
+<!-- Begin Footer -->
+<div id="footer-wrapper">
+  <div id="footer">
+    <div id="footer-content">
+
+      <!-- Begin Copyright -->
+      <div id="copyright">
+        <p>© Copyright 2018 ArtBolot | Bolotbek Mambetov</p>
+      </div>
+      <!-- End Copyright -->
+
+      <!-- Begin Social Icons -->
+      <div id="socials">
+         <ul>
+           <li><a href="#"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
+           <li><a href="#"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
+ 			 <li><a href="#"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
+         </ul>
+      </div>
+      <!-- End Social Icons -->
+
+    </div>
+  </div>
+</div>
+
+<!-- End Footer -->
+<script type="text/javascript">
+$(document).ready(function(){
+			$("#gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'light_square',autoplay_slideshow: false});
+
+			$("ul.grid img").hide()
+			$("ul.grid img").each(function(i) {
+			  $(this).delay(i * 200).fadeIn();
+			});
+
+         // my code
+         $('#gallery img').css ('width', '100%');
+         $w = $('#gallery img').css ('width');
+         $h = $('#gallery img').css ('height');
+         if ($w < $h){
+            $('#gallery img').css ('height', '100%');
+            $('#gallery img').css ('width', 'auto');
+         }
+
+});
+</script>
+</body>
+</html>
