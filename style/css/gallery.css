@@ -1,7 +1,9 @@
 /*-----------------------------------------------------------------------------------*/
 /*	10.	PORTFOLIO
 /*-----------------------------------------------------------------------------------*/
-
+body {
+	//background-color: black;
+}
 #portfolio ul li {
 	background: none;
 	padding: 0;
@@ -24,33 +26,40 @@ ul.grid:after {
 }
 
 ul.grid li {
+	//display: block;
 	width: 225px;
+	height:225px;
 	margin: 0;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	float: left;
 	overflow: hidden;
 	background: none;
-	-moz-box-shadow: 0px 1px 2px #8e8e8e;
-	-webkit-box-shadow: 0px 1px 2px #8e8e8e;
-	box-shadow: 0px 1px 2px #8e8e8e;
+	position: relative;
+	//-moz-box-shadow: 0px 1px 2px #8e8e8e;
+	//-webkit-box-shadow: 0px 1px 2px #8e8e8e;
+	//box-shadow: 0px 1px 2px #8e8e8e;
 }
 
 ul.grid li a {
 	outline:0;
+
 }
 
-ul.grid li img {
-	display: block;
-	width:225px;
-	height:150px;
+.ballet-image img {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 ul.gallerynav {
 	width:960px;
 	margin:0 auto 22px;
 	height: 14px;
-	background-color: #FFF;
+	//background-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.9);
 	-moz-box-shadow: 0px 1px 2px #9f9f9f;
 	-webkit-box-shadow: 0px 1px 2px #9f9f9f;
 	box-shadow: 0px 1px 2px #9f9f9f;
@@ -64,6 +73,7 @@ ul.gallerynav li a {
 	float:left;
 	font-family: 'Puritan20Normal';
 	color: #565656;
+	//color: white;
 	margin: 0 15px;
 	font-size: 15px;
 	line-height: 18px;

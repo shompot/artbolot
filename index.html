@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Home | ArtBolot</title>
+<link rel="icon" href="images/logo2.png">
 <link rel="stylesheet" type="text/css" href="style/css/style.css" media="all" />
 <link rel="stylesheet" type="text/css" href="style/css/home.css" media="all" />
 <link rel="stylesheet" media="all" href="style/type/folks.css" />
@@ -39,33 +40,6 @@ $(function() {
 			}
 });
 </script>
-<script>
-    var fileNames = new Array();
-    $.ajax({
-      url: "/images/slideshow",
-      success: function(data){
-         $(data).find("td > a").each(function(){
-            if(openFile($(this).attr("href"))){
-                fileNames.push($(this).attr("href"));
-					 console.log($(this).text());
-            }
-         });
-      }
-    });
-    console.log(fileNames);
-    function openFile(file) {
-        var extension = file.substr( (file.lastIndexOf('.') +1) );
-		  conole.log(extension);
-        switch(extension) {
-            case 'jpg':
-            case 'png':
-                return true;
-                break;
-            default:
-                return false;
-        }
-    };
-</script>
 </head>
 <body>
 <div id="container">
@@ -74,7 +48,7 @@ $(function() {
     <div id="header-wrapper">
       <!-- Begin Header -->
       <div id="header">
-        <div id="logo"><a href="index.html"><img src="images/logo_white.png" id="logoPic" /></a></div>
+        <div id="logo"><a href="index.html"><img src="style/images/logo_white.png" id="logoPic" /></a></div>
         <!-- Logo -->
         <!-- Begin Menu -->
         <div id="menu-wrapper">
@@ -98,9 +72,9 @@ $(function() {
   <!-- Begin Slider -->
   <div id="cycle-wrapper">
     <div id="sliderholder-cycle">
-			<div class = "slide-box" ><img src="images/slideshow/1.jpg"/></div>
-			<div class = "slide-box" ><img src="images/slideshow/2.jpg"/></div>
-      	<div class = "slide-box" ><img src="images/slideshow/3.jpg"/></div> </div>
+			<div class = "slide-box" ><img src="style/images/slideshow/1.jpg"/></div>
+			<div class = "slide-box" ><img src="style/images/slideshow/2.jpg"/></div>
+      	<div class = "slide-box" ><img src="style/images/slideshow/3.jpg"/></div> </div>
     <ul class="slidernav">
     </ul>
     <div class="sliderdir"> <a href="#"><span class="sliderprev">Prev</span></a> <a href="#"><span class="slidernext">Next</span></a> </div>
@@ -137,14 +111,16 @@ $(function() {
 <!-- End Footer -->
 <script type="text/javascript">
 $(document).ready(function(){
-         $('.slide-box img').css ('width', '100%');
-         $w = $('.slide-box img').css ('width');
-         $h = $('.slide-box img').css ('height');
-         if ($w < $h){
-            $('.slide-box img').css ('height', '100%');
-            $('.slide-box img').css ('width', 'auto');
-         }
+	$( ".slide-box img" ).each(function() {
+      $(this).css ('width', '100%');
+      $w = $(this).css ('width');
+      $h = $(this).css ('height');
+      if ($w < $h){
+         $(this).css ('height', '100%');
+         $(this).css ('width', 'auto');
 
+      }
+	});
 });
 </script>
 </body>

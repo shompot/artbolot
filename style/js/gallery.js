@@ -1,63 +1,57 @@
 jQuery(document).ready(function($) {
-		// We only want these styles applied when javascript is enabled
-		$('div.navigation').css({'width' : '960px', 'float' : 'left'});
-		$('div.content').css('display', 'block');
+	/*
+	var $path = window.location.pathname;
+	$path = $path.substring(0, $path.lastIndexOf('/'));
+	var file = "list.txt";
+	console.log(file);
+	var lines=[];
+	 $.get(file,function(txt){
+		 console.log('success');
+	     lines = txt.responseText.split("\n");
+		  var len = lines.length;
+	     for (var i = 0; i < len; i++) {
+	         console.log(lines[i]);
+	     }
+	 });
+	 console.log(lines.length);
+	 */
+	var $images = [];
 
-		// Initially set opacity on thumbs and add
-		// additional styling for hover effect on thumbs
-		var onMouseOutOpacity = 0.67;
-		$("#thumbs ul.thumbs li").css("opacity", onMouseOutOpacity);
-		$("#thumbs ul.thumbs li").hover(function() {
-			 $(this).animate({opacity: 1.0}, 500);
-		}, function() {
-			 $(this).animate({opacity: onMouseOutOpacity}, 500);
-		});
+		var $images = [
+			'22x41.8.JPG',
+			'23.7x69.JPG',
+			'25.5x69.JPG',
+			'25x68.5.JPG',
+			'27x68.7.JPG',
+			'29.5x63.5.JPG',
+			'31x23.JPG',
+			'31x70.JPG',
+			'32.5x52.JPG',
+			'33x54.JPG',
+			'35x67.JPG',
+			'37.7x95.JPG',
+			'38x69.JPG',
+			'39,5x26.JPG',
+			'39.5x64.JPG',
+			'39x64.JPG',
+			'40 x65.JPG',
+			'40 x 65.JPG',
+			'40 x65.JPG',
+			'40x 64.JPG'];
 
-		// Initialize Advanced Galleriffic Gallery
-		var gallery = $('#thumbs').galleriffic({
-			delay:                     2500,
-			numThumbs:                 5,
-			preloadAhead:              10,
-			enableTopPager:            false,
-			enableBottomPager:         false,
-			maxPagesToShow:            7,
-			imageContainerSel:         '#slideshow',
-			controlsContainerSel:      '#controls',
-			captionContainerSel:       '#caption',
-			loadingContainerSel:       '#loading',
-			renderSSControls:          true,
-			renderNavControls:         true,
-			playLinkText:              'Play Slideshow',
-			pauseLinkText:             'Pause Slideshow',
-			prevLinkText:              '&lsaquo; Previous Photo',
-			nextLinkText:              'Next Photo &rsaquo;',
-			nextPageLinkText:          'Next &rsaquo;',
-			prevPageLinkText:          '&lsaquo; Prev',
-			enableHistory:             false,
-			autoStart:                 true,
-			syncTransitions:           true,
-			defaultTransitionDuration: 900,
-			onSlideChange:             function(prevIndex, nextIndex) {
-				// 'this' refers to the gallery, which is an extension of $('#thumbs')
-				this.find('ul.thumbs').children()
-					.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
-					.eq(nextIndex).fadeTo('fast', 1.0);
-			},
-			onPageTransitionOut:       function(callback) {
-				this.fadeTo('fast', 0.0, callback);
-			},
-			onPageTransitionIn:        function() {
-				this.fadeTo('fast', 1.0);
+	for (var $i=0; $i<$images.length; $i++){
+		var $imageItem = '<li data-id="id-'+$i+'" class="ballet-image"> <a href="style/images/ballet/'+$images[$i]+'" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/'+$images[$i]+'" alt="" /></a> </li>';
+		$('#gallery').append($imageItem);
+	}
+
+	$( ".ballet-image img" ).each(function(index) {
+         $(this).css ('width', '100%');
+         $w = $(this).css ('width');
+         $h = $(this).css ('height');
+
+         if ($w < $h){
+            $(this).css ('height', '100%');
+            $(this).css ('width', 'auto');
 			}
-		});
-			gallery.find('a.prev').click(function(e) {
-			gallery.previousPage();
-			e.preventDefault();
-		});
-
-		gallery.find('a.next').click(function(e) {
-			gallery.nextPage();
-			e.preventDefault();
-		});
-
+   });
 });
