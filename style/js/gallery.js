@@ -39,6 +39,7 @@ jQuery(document).ready(function($) {
 			'40 x65.JPG',
 			'40x 64.JPG'];
 
+		$('#gallery').append("");
 	for (var $i=0; $i<$images.length; $i++){
 		var $imageItem = '<li data-id="id-'+$i+'" class="ballet-image"> <a href="style/images/ballet/'+$images[$i]+'" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/'+$images[$i]+'" alt="" /></a> </li>';
 		$('#gallery').append($imageItem);

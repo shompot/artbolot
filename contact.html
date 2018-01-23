@@ -136,7 +136,7 @@ Social Media and online galleries links are provided bellow.</p>
       </div>
       <div class="contact-right">
         <div class="one-half">
-          <h4>Sevgi Gallery</h4>
+          <h4>Sevgi Art Gallery</h4>
           <p>Cinnah Cad. Mesnevi Sok. 5/1 <br />
             Çankaya/Ankara, Turkey <br />
 				06690  <br />
@@ -147,14 +147,25 @@ Social Media and online galleries links are provided bellow.</p>
 
         <div class="clear"></div>
         <br />
-		  <iframe width="400" height="188" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/embed?mid=1ptRiBak8Y4Z7xKBG1osHcowDIFYId8yA"></iframe>
-      </div>
+		  <!--iframe width="400" height="188" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/embed?mid=1ptRiBak8Y4Z7xKBG1osHcowDIFYId8yA"></iframe-->
+		  <div id="map"></div>
+		</div>
       <div class="clear"></div>
       <div class="divider"></div>
       <!--div id="twitter-wrapper">
         <div id="twitter"></div>
         <span class="username">Follow <a href="http://twitter.com/elemisdesign">artbolot</a></span> </div-->
-      <div class="clear"></div>
+		  <div id="links-wrapper">
+          <div class="links">
+				 <h3>Follow me on:</h3>
+				 <span><a target="_blank" href="https://www.instagram.com/artbolot/">Instagram</a>,</span>&nbsp;
+				 <span><a target="_blank" href="https://www.artmajeur.com/artbolot">Artmajeur</a>,</span>&nbsp;
+				 <span><a target="_blank" href="https://www.saatchiart.com/artbolot">Saatchi Art</a>,</span>&nbsp;
+				 <span><a target="_blank" href="https://artbolot.deviantart.com/">Deviant Art</a>,</span>&nbsp;
+				 <span><a target="_blank" href="https://www.facebook.com/artbolotx/">Facebook</a></span>&nbsp;
+			 </div>
+		 </div>
+		<div class="clear"></div>
     </div>
     <!-- End Content -->
 
@@ -179,9 +190,9 @@ Social Media and online galleries links are provided bellow.</p>
       <!-- Begin Social Icons -->
       <div id="socials">
 			<ul>
-           <li><a href="#"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
-           <li><a href="#"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
- 			 <li><a href="#"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
+           <li><a target="_blank" href="https://www.facebook.com/artbolotx/"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
+           <li><a target="_blank" href="https://www.instagram.com/artbolot/"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
+ 			 <li><a target="_blank" href="https://artbolot.deviantart.com/"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
          </ul>
       </div>
       <!-- End Social Icons -->
@@ -190,5 +201,32 @@ Social Media and online galleries links are provided bellow.</p>
   </div>
 </div>
 <!-- End Footer -->
+<script>
+  var map;
+  var myLatLng = {lat: 39.895293986705255, lng: 32.853792999999996};
+
+  function initMap() {
+		 	map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 16,
+			center: myLatLng,
+			gestureHandling: 'cooperative',
+			zoomControl: true,
+  			mapTypeControl: true,
+  			scaleControl: true,
+  			streetViewControl: true,
+  			rotateControl: true,
+  			fullscreenControl: true
+
+		 });
+		 var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: 'Sevgi Art Gallery'
+		 });
+	  }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFrSkXuiPrZFMDDLDEsE-tzvjdXUixEwY&callback=initMap"
+async defer></script>
 </body>
 </html>

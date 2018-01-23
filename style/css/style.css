@@ -42,7 +42,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	background:transparent
 }
 body {
-	line-height:1
+	line-height:1;
+
 }
 ol, ul {
 	list-style:none
@@ -124,8 +125,9 @@ body {
 	//color: #565656;
 	color: white;
 	font-size: 13px;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	//overflow-y: scroll;
+	//overflow-x: hidden;
+	overflow: auto;
 }
 
 html, body {
@@ -140,7 +142,7 @@ html, body {
 }
 
 #footer-wrapper, .push {
-	height: 145px; /* .push must be the same height as .footer */
+	height: 45px; /* .push must be the same height as .footer */
 }
 
 p {

@@ -6,6 +6,10 @@ h1,h2, h3, h4 {
 	//text-align: center;
 }
 
+#map {
+	width:400px;
+	height:188px;
+}
 #ajax-contact-form {
 	color: rgba(50,50,50,1);
 }
@@ -60,38 +64,31 @@ h1,h2, h3, h4 {
 	background: transparent url(style/images/icon-email.png) no-repeat 0 4px;
 }
 
-#twitter-wrapper {
+#links-wrapper {
 	float: none;
 	clear: both;
 	margin: 0 0 60px 0;
 	position: relative;
 }
 
-#twitter {
-	font-style: italic;
-	font-size:12px;
+.links {
+	//font-style: italic;
+	font-size:14px;
 	padding: 10px 0;
-	background: #e8e8e8 url(style/images/twitter.png) no-repeat 20px center;
+	//background: #e8e8e8 url(style/images/twitter.png) no-repeat 20px center;
+	//background-color: rgba(232,232,232,1);
 	min-height: 28px;
-}
-
-#twitter ul {
-	padding: 0;
-	margin: 0;
-}
-
-#twitter ul li {
-	background: none;
-	padding: 5px 10px 5px 80px;
+	//color: black;
+	//padding: 5px 10px 5px 80px;
 	line-height: 16px;
 }
 
-#twitter ul li a {
-	color: #5d8ba6;
+.links a {
+	//color: #5d8ba6;
 	text-decoration: none;
 }
 
-#twitter ul li a:hover {
+.links a:hover {
 	text-decoration: underline;
 }
 
