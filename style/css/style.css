@@ -123,7 +123,8 @@ body {
 	//background-color: #f0f0f0;
 	background-color: black;
 	//color: #565656;
-	color: white;
+	color: rgba(240,240,240,0.8);
+	//color: white;
 	font-size: 13px;
 	//overflow-y: scroll;
 	//overflow-x: hidden;
@@ -153,7 +154,8 @@ p {
 a {
 	text-decoration: none;
 	//color: #1f1f1f;
-	color: white;
+	//color: white;
+	color: rgba(240,240,240,0.8);
 }
 
 a:hover {
@@ -626,7 +628,8 @@ table.price td h2 sup {
 	display: block; /*background of menu items (default state)*/
 	text-decoration: none;
 	position: relative;
-	color: white;
+	//color: white;
+	color: rgba(240,240,240,0.8);
 	//color: rgb(255, 0, 0);
 }
 

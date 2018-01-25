@@ -101,16 +101,18 @@ ul.pagenav li.selectedPage-1 a{
 
 /*----------pagenav----------------*/
 .pagenav-table {
-	display: table;
+	width:960px;
+	display: block;
 	margin: 0 auto;
 }
 
 
 ul.pagenav {
-	width:960px;
+	width: 100%;
 	margin:0 auto 22px;
 	height: 14px;
 	//text-align: center;
+
 	list-style: none;
 
 	//background-color: red;
@@ -118,6 +120,7 @@ ul.pagenav {
 
 ul.pagenav li {
 	//float:left;
+	float: right;
 	display: inline;
 	//text-align: center;
 	background-color: red;

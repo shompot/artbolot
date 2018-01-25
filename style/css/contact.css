@@ -9,11 +9,10 @@ h1,h2, h3, h4 {
 p {
 	text-align: center;
 }
-
-.contact-left,#contact-form {
-	display: block;
-	margin: 0 auto;
+.info {
+	margin-top: 30px;
 }
+
 
 #map {
 	width:400px;
@@ -87,15 +86,25 @@ p {
 	padding: 10px 0;
 	//background: #e8e8e8 url(style/images/twitter.png) no-repeat 20px center;
 	//background-color: rgba(232,232,232,1);
+	//background-color: red;
 	min-height: 28px;
 	//color: black;
 	//padding: 5px 10px 5px 80px;
 	line-height: 16px;
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
 }
 
 .links a {
 	//color: #5d8ba6;
 	text-decoration: none;
+	text-align: center;
+}
+
+.links span {
+	//text-align: center;
+	display: inline-block;
+	margin: 0 auto;
 }
 
 .links a:hover {
@@ -136,4 +145,13 @@ p {
 	width:100%;
 	margin: 0 auto;
 	//position: relative;
+}
+
+/*-------------------------------------*/
+.contact-left {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 420px;
+	height: 360px;
 }

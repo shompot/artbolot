@@ -4,7 +4,7 @@
 error_reporting (E_ALL ^ E_NOTICE);
 $post = (!empty($_POST)) ? true : false;
 
-$replyto='cholpon94@gmail.com.com';
+$replyto='cholpon94@gmail.com';
 $subject = 'ArtBolot.com Contact Form';
 
 if($post)

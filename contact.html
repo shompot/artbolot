@@ -89,12 +89,11 @@ $(document).ready(function() {
 
   <!-- Begin Wrapper -->
   <div id="wrapper">
-
     <!-- Begin Content -->
     <div class="content">
       <h3>ArtBolot Contact Information</h3>
 		<div class="info">
-	      <p>In order to contact me directly, please, fill out the form bellow.</p>
+	      <p>Please, choose one of the options bellow to contact.</p>
 			<p>
 				<span class="highlight3">e-mail:</span> bolotx63@mail.ru <br>
 				<span class="highlight3">WhatsApp:</span> +90 538 057 62 97 <img style = "margin-left:5px;"src="style/images/whatsapp.png" class="social-media-icon" />
@@ -102,10 +101,10 @@ $(document).ready(function() {
 		</div>
 		<!-- Begin Form -->
       <div class="contact-left" style="margin: 0 auto;">
-        <div id="contact-form">
+        <div id="contact-form" style="margin: 0 auto;">
 
           <!--begin:notice message block-->
-          <div id="note"></div>
+          <div id="note">Fill out the form:</div>
           <!--begin:notice message block-->
 
           <form id="ajax-contact-form" method="post" action="javascript:alert('success!');">
@@ -175,7 +174,7 @@ $(document).ready(function() {
       <div id="socials">
 			<ul>
            <li><a target="_blank" href="https://www.instagram.com/artbolot/"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
- 			  <li><a target="_blank" href="https://artbolot.deviantart.com/"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
+ 			  <li><a target="_blank" href="https://www.saatchiart.com/artbolot"><img src="style/images/saatchiart.png" class="social-media-icon" /></a></li>
 			  <li><a target="_blank" href="https://www.facebook.com/artbolotx/"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
          </ul>
       </div>
@@ -185,32 +184,16 @@ $(document).ready(function() {
   </div>
 </div>
 <!-- End Footer -->
-<script>
-  var map;
-  var myLatLng = {lat: 39.895293986705255, lng: 32.853792999999996};
-
-  function initMap() {
-		 	map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 16,
-			center: myLatLng,
-			gestureHandling: 'cooperative',
-			zoomControl: true,
-  			mapTypeControl: true,
-  			scaleControl: true,
-  			streetViewControl: true,
-  			rotateControl: true,
-  			fullscreenControl: true
-
-		 });
-		 var marker = new google.maps.Marker({
-			position: myLatLng,
-			map: map,
-			title: 'Sevgi Art Gallery'
-		 });
-	  }
-
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFrSkXuiPrZFMDDLDEsE-tzvjdXUixEwY&callback=initMap"
-async defer></script>
 </body>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$(".contact-left").css ('margin-left', 0);
+	var $t = ($('.content').width()-$(".contact-left").width())/2;
+	//console.log ($('.content').width());
+	//console.log ($(".contact-left").width());
+	//console.log ($t);
+	$(".contact-left").css ('margin-left', $t);
+});
+</script>
 </html>

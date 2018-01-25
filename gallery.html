@@ -63,23 +63,22 @@
 
       </ul>
       <!-- End Portfolio Elements -->
-
-      <!-- Begin Page Navigation -->
-      <!--div class='pagenav-table'-->
-        <ul class="pagenav">
-          <li><a href="#" data-value="page1">1<span></span></a></li>
-          <li><a href="#" data-value="page2">2<span></span></a></li>
-          <li><a href="#" data-value="page3">3<span></span></a></li>
-          <li><a href="#" data-value="page4">4<span></span></a></li>
-          <li><a href="#" data-value="page5">5<span></span></a></li>
-          <li><a href="#" data-value="page6">6<span></span></a></li>
-          <li class="selectedPage-1"><a href="#" data-value="all">All<span></span></a></li>
-        </ul>
-      <!--/div-->
-      <!-- End Page Navigation -->
+  </div>
+  <!-- Begin Page Navigation -->
+  <div id="pagenav-container">
+    <div class='pagenav-table'>
+      <ul class="pagenav">
+        <li class="selectedPage-1"><a href="#" data-value="all">All<span></span></a></li>
+        <li><a href="#" data-value="page5">5<span></span></a></li>
+        <li><a href="#" data-value="page4">4<span></span></a></li>
+        <li><a href="#" data-value="page3">3<span></span></a></li>
+        <li><a href="#" data-value="page2">2<span></span></a></li>
+        <li><a href="#" data-value="page1">1<span></span></a></li>
+      </ul>
     </div>
   </div>
-
+  <!-- End Page Navigation -->
+</div>
   <!-- End Wrapper -->
   <div class="clearfix"></div>
   <div class="push"></div>
@@ -100,8 +99,8 @@
       <div id="socials">
   			<ul>
           <li><a target="_blank" href="https://www.instagram.com/artbolot/"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
-   			  <li><a target="_blank" href="https://artbolot.deviantart.com/"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
-  			  <li><a target="_blank" href="https://www.facebook.com/artbolotx/"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
+          <li><a target="_blank" href="https://www.saatchiart.com/artbolot"><img src="style/images/saatchiart.png" class="social-media-icon" /></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/artbolotx/"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
         </ul>
       </div>
       <!-- End Social Icons -->
@@ -120,7 +119,14 @@ $(document).ready(function(){
 			  $(this).delay(i * 200).fadeIn();
 			});
 
-      $(".pagenav li:first-of-type a").trigger("click");
+      $(".pagenav li:last-of-type a").trigger("click");
+
+      $(".pagenav-table").css ('margin-left', 0);
+    	var $t = ($('.pagenav-container').width()-$(".pagenav-table").width())/2;
+    	//console.log ($('.pagenav-container').width());
+    	//console.log ($(".pagenav-table").width());
+    	//console.log ($t);
+    	//$(".pagenav-table").css ('margin-left', parseInt($t));
 
 });
 </script>
