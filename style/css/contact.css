@@ -3,7 +3,16 @@
 /*-----------------------------------------------------------------------------------*/
 h1,h2, h3, h4 {
 	color: #5d8ba6;
-	//text-align: center;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.contact-left,#contact-form {
+	display: block;
+	margin: 0 auto;
 }
 
 #map {
@@ -30,7 +39,8 @@ h1,h2, h3, h4 {
 }
 
 #wrapper ul.social li {
-	float: left;
+	//float: left;
+	//text-align: center;
 	background: none;
 	margin-right: 10px;
 	padding: 0;

@@ -13,7 +13,8 @@
 <script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
 <script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
 <script type="text/javascript" src="style/js/quicksand.js"></script>
-<script type="text/javascript" src="style/js/portfolio.js"></script>
+<!--script type="text/javascript" src="style/js/portfolio.js"></script>
+<script type="text/javascript" src="style/js/pagenav.js"></script-->
 <script type="text/javascript" src="style/js/gallery.js"></script>
 <script type="text/javascript" src="style/js/scripts.js"></script>
 <script type="text/javascript" src="style/js/jquery.prettyPhoto.js"></script>
@@ -32,7 +33,9 @@
           <div id="smoothmenu1" class="ddsmoothmenu">
            <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="gallery.html" class="selected">Gallery</a></li>
+              <li><a href="gallery.html" class="selected">Gallery</a>
+
+              </li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
            </ul>
@@ -49,17 +52,31 @@
   <div id="wrapper">
     <div id="portfolio">
       <!-- Begin Portfolio Navigation -->
-      <ul class="gallerynav">
+      <!--ul class="gallerynav">
         <li class="selected-1"><a href="#" data-value="all">All<span></span></a></li>
-        <!--li><a href="#" data-value="ballet">Ballet<span></span></a></li-->
-      </ul>
+        <li><a href="#" data-value="ballet-image">Ballet<span></span></a></li>
+        <li><a href="#" data-value="horses-image">Horses<span></span></a></li>
+      </ul-->
       <!-- End Portfolio Navigation -->
-
       <!-- Begin Portfolio Elements -->
       <ul id="gallery" class="grid">
+
       </ul>
       <!-- End Portfolio Elements -->
 
+      <!-- Begin Page Navigation -->
+      <!--div class='pagenav-table'-->
+        <ul class="pagenav">
+          <li><a href="#" data-value="page1">1<span></span></a></li>
+          <li><a href="#" data-value="page2">2<span></span></a></li>
+          <li><a href="#" data-value="page3">3<span></span></a></li>
+          <li><a href="#" data-value="page4">4<span></span></a></li>
+          <li><a href="#" data-value="page5">5<span></span></a></li>
+          <li><a href="#" data-value="page6">6<span></span></a></li>
+          <li class="selectedPage-1"><a href="#" data-value="all">All<span></span></a></li>
+        </ul>
+      <!--/div-->
+      <!-- End Page Navigation -->
     </div>
   </div>
 
@@ -81,11 +98,11 @@
 
       <!-- Begin Social Icons -->
       <div id="socials">
-         <ul>
-           <li><a target="_blank" href="https://www.facebook.com/artbolotx/"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
-           <li><a target="_blank" href="https://www.instagram.com/artbolot/"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
- 			 <li><a target="_blank" href="https://artbolot.deviantart.com/"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
-         </ul>
+  			<ul>
+          <li><a target="_blank" href="https://www.instagram.com/artbolot/"><img src="style/images/instagram.png" class="social-media-icon" /></a></li>
+   			  <li><a target="_blank" href="https://artbolot.deviantart.com/"><img src="style/images/deviantart.png" class="social-media-icon" /></a></li>
+  			  <li><a target="_blank" href="https://www.facebook.com/artbolotx/"><img src="style/images/facebook.png" class="social-media-icon" /></a></li>
+        </ul>
       </div>
       <!-- End Social Icons -->
 
@@ -103,7 +120,31 @@ $(document).ready(function(){
 			  $(this).delay(i * 200).fadeIn();
 			});
 
+      $(".pagenav li:first-of-type a").trigger("click");
+
 });
 </script>
 </body>
 </html>
+
+
+          <!--li data-id="id-0" class="page1"><a class="ballet-image" href="style/images/ballet/22x41.8.JPG" rel="prettyPhoto[gallery]"><img src="style/images/ballet/22x41.8.JPG" alt="" ></a></li>
+          <li data-id="id-1" class="page1"> <a class="ballet-image" href="style/images/ballet/23.7x69.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/23.7x69.JPG" alt=""></a></li>
+          <li data-id="id-2" class="page1"> <a class="ballet-image" href="style/images/ballet/25.5x69.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/25.5x69.JPG" alt=""></a> </li>
+          <li data-id="id-3" class="page1"> <a class="ballet-image" href="style/images/ballet/25x68.5.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/25x68.5.JPG" alt=""></a> </li>
+          <li data-id="id-4" class="page1"> <a class="ballet-image" href="style/images/ballet/27x68.7.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/27x68.7.JPG" alt=""></a> </li>
+          <li data-id="id-5" class="page2"> <a class="ballet-image" href="style/images/ballet/29.5x63.5.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/29.5x63.5.JPG" alt=""></a> </li>
+          <li data-id="id-6" class="page2"> <a class="ballet-image" href="style/images/ballet/31x23.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/31x23.JPG" alt=""></a> </li>
+          <li data-id="id-7" class="page2"> <a class="ballet-image" href="style/images/ballet/31x70.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/31x70.JPG" alt=""></a> </li>
+          <li data-id="id-8" class="page2"> <a class="ballet-image" href="style/images/ballet/32.5x52.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/32.5x52.JPG" alt=""></a> </li>
+          <li data-id="id-9" class="page2"> <a class="ballet-image" href="style/images/ballet/33x54.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/33x54.JPG" alt="" ></a> </li>
+          <li data-id="id-10" class="page3"> <a class="ballet-image" href="style/images/ballet/35x67.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/35x67.JPG" alt=""></a> </li>
+          <li data-id="id-11" class="page3"> <a class="ballet-image" href="style/images/ballet/37.7x95.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/37.7x95.JPG" alt="" ></a> </li>
+          <li data-id="id-12" class="page3"> <a class="ballet-image" href="style/images/ballet/38x69.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/38x69.JPG" alt=""></a> </li>
+          <li data-id="id-13" class="page3"> <a class="ballet-image" href="style/images/ballet/39,5x26.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/39,5x26.JPG" alt=""></a> </li>
+          <li data-id="id-14" class="page3"> <a class="ballet-image" href="style/images/ballet/39.5x64.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/39.5x64.JPG" alt=""></a> </li>
+          <li data-id="id-15" class="page4"> <a class="ballet-image" href="style/images/ballet/39x64.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/39x64.JPG" alt=""></a> </li>
+          <li data-id="id-16" class="page4"> <a class="ballet-image" href="style/images/ballet/40 x65.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/40 x65.JPG" alt=""></a> </li>
+          <li data-id="id-17" class="page4"> <a class="ballet-image" href="style/images/ballet/40 x 65.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/40 x 65.JPG" alt=""></a> </li>
+          <li data-id="id-18" class="page4"> <a class="ballet-image" href="style/images/ballet/40 x65.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/40 x65.JPG" alt=""></a> </li>
+          <li data-id="id-19" class="page4"> <a class="ballet-image" href="style/images/ballet/40x 64.JPG" rel="prettyPhoto[gallery]"> <img src="style/images/ballet/40x 64.JPG" alt=""></a> </li-->

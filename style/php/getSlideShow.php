@@ -1,14 +1,9 @@
 <?php
-$filenameArray = [];
-
-$handle = opendir(dirname(realpath(__FILE__)).'/images/slideshow');
+$dir = "\style\images\ballet";
+$handle = opendir(dirname(realpath(__FILE__)).$dir);
         while($file = readdir($handle)){
             if($file !== '.' && $file !== '..'){
-                array_push($filenameArray, "images/$file");
+                echo $file.'<br>';
             }
         }
-
-for (int i=0; i<$filenameArray.length();i++){
-   echo $filenameArray[i];
-}
 ?>

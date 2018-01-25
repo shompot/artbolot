@@ -4,6 +4,7 @@
 body {
 	//background-color: black;
 }
+
 #portfolio ul li {
 	background: none;
 	padding: 0;
@@ -16,6 +17,7 @@ body {
 	margin-left:-20px;
 	padding: 0;
 }
+
 
 ul.grid:after {
 	content: "";
@@ -46,7 +48,7 @@ ul.grid li a {
 
 }
 
-.ballet-image img {
+#gallery img {
 	width: 100%;
 	position: absolute;
 	top: 50%;
@@ -89,8 +91,61 @@ ul.gallerynav li.selected-1 a {
 	color: #5d8ba6;
 }
 
+ul.pagenav li.selectedPage-1 a{
+	color: #5d8ba6;
+}
+
 .hidden {
 	display: none;
+}
+
+/*----------pagenav----------------*/
+.pagenav-table {
+	display: table;
+	margin: 0 auto;
+}
+
+
+ul.pagenav {
+	width:960px;
+	margin:0 auto 22px;
+	height: 14px;
+	//text-align: center;
+	list-style: none;
+
+	//background-color: red;
+}
+
+ul.pagenav li {
+	//float:left;
+	display: inline;
+	//text-align: center;
+	background-color: red;
+}
+
+ul.pagenav li a {
+	float:left;
+	font-family: 'Puritan20Normal';
+	color: #565656;
+	//color: white;
+	margin: 0 15px;
+	font-size: 15px;
+	line-height: 18px;
+	padding: 8px 0;
+}
+
+ul.pagenav li a:hover {
+	text-decoration: none;
+	color: #5d8ba6;
+}
+
+ul.pagenav li.selected-1 a {
+	color: #5d8ba6;
+}
+
+.pagenav li:first-of-type a {
+	//background-color: red;
+	//color: green;
 }
 
 /*-----------------------------------------------------------------------------------*/
